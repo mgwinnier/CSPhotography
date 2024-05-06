@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CSPhotography/static/css/main.c34bde66.css",
+    "main.js": "/CSPhotography/static/js/main.cd519a05.js",
+    "static/media/logo.png": "/CSPhotography/static/media/logo.1eafb75505f34f86cc6d.png",
+    "index.html": "/CSPhotography/index.html",
+    "main.c34bde66.css.map": "/CSPhotography/static/css/main.c34bde66.css.map",
+    "main.cd519a05.js.map": "/CSPhotography/static/js/main.cd519a05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c34bde66.css",
+    "static/js/main.cd519a05.js"
+  ]
+}
