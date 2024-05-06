@@ -7,7 +7,7 @@ function Footer() {
             <div className="flex flex-col md:flex-row items-center justify-between px-4"> {/* Added padding here */}
                 {/* Logo Section (Smaller on Mobile) */}
                 <div className="flex items-center">
-                    <img src="../assets/logo.png" alt="Crystal Saddler Photography" style={{ maxWidth: '80px', height: 'auto' }} className="md:max-w-none md:mr-8" />
+                    <img src="./assets/logo.png" alt="Crystal Saddler Photography" style={{ maxWidth: '80px', height: 'auto' }} className="md:max-w-none md:mr-8" />
                 </div>
 
                 {/* Navigation Links (Centered) */}

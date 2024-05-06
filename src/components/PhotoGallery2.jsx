@@ -21,7 +21,7 @@ const photos = [
     { src: './assets/WF Glendale final - jpg-1.jpg', width: 5076, height: 3384 },
     { src: './assets/WF Glendale final - jpg-22.jpg', width: 5504, height: 5504 },
     { src: './assets/WF Glendale final - jpg-7.jpg', width: 7362, height: 4908 },
-    { src: './assets/_DSC5194-Edit.jpg', width: 6032, height: 4021 }
+    { src: './assets/image1.jpg', width: 6032, height: 4021 }
 ];
 
 function PhotoGallery2() {
