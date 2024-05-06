@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+.react-photo-gallery--gallery {
+  z-index: 0; /* Ensure the gallery is behind the lightbox */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ril__navButtons, .ril__closeButton {
+  z-index: 1100 !important;
+  opacity: 1 !important;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Ensure this is visible against your background */
+}
+
+.ril__navButtonPrev, .ril__navButtonNext {
+  border: none !important;
+}
+
+.ril__closeButton {
+  background-color: rgba(255, 0, 0, 0.8) !important; /* Make close button more visible */
 }
