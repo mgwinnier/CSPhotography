@@ -35,7 +35,7 @@ function ContactUsSection() {
                 border: '2px solid black',
                 boxShadow: '0 0 0 2px white'
             }}>
-                Schedule a Consultation
+                Schedule an Consultation
             </Link>
         </div>
     );
