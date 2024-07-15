@@ -20,11 +20,11 @@ function Navbar() {
     );
 
     return (
-        <nav className="bg-white px-4 sm:px-6 py-3 shadow-md">
+        <nav className="bg-white px-6 sm:px-8 py-4 shadow-md">
             <div className="container mx-auto flex flex-wrap items-center justify-between">
                 <Link to="/" className="flex items-center">
-                    <img src={logo} className="h-10 mr-3" alt="Logo" />
-                    <span className="text-xl font-semibold text-gray-800">Crystal Saddler Photography</span>
+                    <img src={logo} className="h-12 mr-4" alt="Logo" />
+                    <span className="text-2xl font-semibold text-gray-800" style={{ fontFamily: 'Poppins, sans-serif' }}>Crystal Saddler Photography</span>
                 </Link>
                 <button
                     type="button"
@@ -35,8 +35,8 @@ function Navbar() {
                 >
                     {isOpen ? CloseIcon : HamburgerIcon}
                 </button>
-                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-center md:flex md:space-x-4 w-full md:w-auto`} id="navbar-default">
-                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-6 md:mt-0 md:text-sm md:font-medium">
+                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-center md:flex md:space-x-6 w-full md:w-auto`} id="navbar-default">
+                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium" style={{ fontFamily: 'Poppins, sans-serif' }}>
                         <li>
                             <Link to="/" className="block py-2 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>Home</Link>
                         </li>
