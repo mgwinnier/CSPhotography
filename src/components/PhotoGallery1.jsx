@@ -4,14 +4,23 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import 'tailwindcss/tailwind.css';
 
+// Importing the images with correct paths
+import img1 from '../assets/10911 Dry Stack-31.jpg';
+import img2 from '../assets/927 Belle Oaks-10.jpg';
+import img3 from '../assets/Congress-13-X3.jpg';
+import img4 from '../assets/Westover Hills -1.jpg';
+import img5 from '../assets/Elevator lobby Ross ave-1-X3.jpg';
+import img6 from '../assets/FP 4 large conf jpg-X3-2.jpg';
+import img7 from '../assets/i-hmPbjtG-4K.jpg';
+
 const photos = [
-    { src: './assets/10911 Dry Stack-31.jpg', width: 6172, height: 4115 },
-    { src: './assets/927 Belle Oaks-10.jpg', width: 6192, height: 4128 },
-    { src: './assets/Congress-13-X3.jpg', width: 1600, height: 1068 },
-    { src: './assets/Westover Hills -1.jpg', width: 6192, height: 4128 },
-    { src: './assets/Elevator lobby Ross ave-1-X3.jpg', width: 1600, height: 1067 },
-    { src: './assets/FP 4 large conf jpg-X3-2.jpg', width: 1600, height: 1068 },
-    { src: './assets/i-hmPbjtG-4K.jpg', width: 3840, height: 2563 },
+    { src: img1, width: 6172, height: 4115 },
+    { src: img2, width: 6192, height: 4128 },
+    { src: img3, width: 1600, height: 1068 },
+    { src: img4, width: 6192, height: 4128 },
+    { src: img5, width: 1600, height: 1067 },
+    { src: img6, width: 1600, height: 1068 },
+    { src: img7, width: 3840, height: 2563 },
 ];
 
 function PhotoGallery1() {
