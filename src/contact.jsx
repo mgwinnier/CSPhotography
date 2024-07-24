@@ -55,7 +55,7 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col items-center justify-start pt-6 min-h-screen bg-white" style={{ fontFamily: '"Glacial Indifference", sans-serif' }}>
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2" style={{ letterSpacing: '0.15em', color: '#3b2d2d' }}>CONTACT US</h1>
+        <h1 className="text-4xl font-bold mb-2" style={{ letterSpacing: '0.15em', color: '#3b2d2d' }}>CONTACT ME</h1>
       </div>
       <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-md mx-4 border-2 border-black">
         <form id="contact-form" onSubmit={handleSubmit} className="flex flex-col space-y-4">

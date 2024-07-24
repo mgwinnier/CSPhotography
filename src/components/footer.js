@@ -21,7 +21,7 @@ function Footer() {
 
                 {/* Email and LinkedIn Section (Right Aligned) */}
                 <div className="text-center md:text-right">
-                    <p className="text-sm md:text-base mb-2">crystalsaddlerphotography@yahoo.com</p>
+                    <p className="text-sm md:text-base mb-2">crystal@crystalsaddlerphotography</p>
                     <a href="https://www.linkedin.com/in/crystal-saddler-38225360/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
                         <img src="./assets/linkedin-logo.png" alt="LinkedIn Profile" style={{ maxWidth: '24px', height: 'auto' }} className="inline-block" />
                     </a>
