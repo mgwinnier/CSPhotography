@@ -10,6 +10,8 @@ const ContactForm = () => {
     message: '',
   });
   const [recaptchaToken, setRecaptchaToken] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
@@ -17,8 +19,11 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     if (!recaptchaToken) {
-      alert('Please verify you are not a robot.');
+      setErrorMessage('Please verify you are not a robot.');
+      setIsSubmitting(false);
       return;
     }
 
@@ -38,10 +43,13 @@ const ContactForm = () => {
         message: '',
       });
       setRecaptchaToken('');
+      setErrorMessage('');
     } catch (error) {
       console.error('Failed to send email', error);
-      alert('Failed to send message. Please try again.');
+      setErrorMessage('Failed to send message. Please try again.');
     }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -93,7 +101,10 @@ const ContactForm = () => {
             onExpired={() => setRecaptchaToken('')}
             className="flex justify-center my-4"
           />
-          <button type="submit" className="bg-black text-white p-2 rounded-md hover:bg-grey-400 transition duration-200">Send Message</button>
+          <button type="submit" disabled={isSubmitting || !recaptchaToken} className="bg-black text-white p-2 rounded-md hover:bg-grey-400 transition duration-200">
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </button>
+          {errorMessage && <p className="text-red-500 text-center">{errorMessage}</p>}
         </form>
       </div>
     </div>
