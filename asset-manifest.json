@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/CSPhotography/static/css/main.7fe5dcce.css",
-    "main.js": "/CSPhotography/static/js/main.8d6cf8b7.js",
+    "main.css": "/CSPhotography/static/css/main.e892c804.css",
+    "main.js": "/CSPhotography/static/js/main.4900a35e.js",
     "static/media/St Paul-53.jpg": "/CSPhotography/static/media/St Paul-53.fc79a03ebcb4347f4595.jpg",
     "static/media/927 Belle Oaks-10.jpg": "/CSPhotography/static/media/927 Belle Oaks-10.084d5a123d97081fde6a.jpg",
+    "static/media/me.jpg": "/CSPhotography/static/media/me.f0028c615105c7d25c1d.jpg",
+    "static/media/Frisco-43.jpg": "/CSPhotography/static/media/Frisco-43.706a77c15bf369cc8c6d.jpg",
     "static/media/Heifer-6.jpg": "/CSPhotography/static/media/Heifer-6.9d2bcdd72ac70a586093.jpg",
+    "static/media/Frisco-15.jpg": "/CSPhotography/static/media/Frisco-15.6e8d4b61b646b3126389.jpg",
+    "static/media/WF Sendero Marketplace Exterior -7.jpg": "/CSPhotography/static/media/WF Sendero Marketplace Exterior -7.c62eaad9b5b5b74ed03b.jpg",
     "static/media/WF Glendale final - jpg-22.jpg": "/CSPhotography/static/media/WF Glendale final - jpg-22.d415d9c5adb19f418949.jpg",
     "static/media/WF Glendale final - jpg-7.jpg": "/CSPhotography/static/media/WF Glendale final - jpg-7.28abf9b535e29b246244.jpg",
+    "static/media/Frisco-45.jpg": "/CSPhotography/static/media/Frisco-45.9127c4100331563967c0.jpg",
     "static/media/image1.jpg": "/CSPhotography/static/media/image1.1698346b9b2f82f8cba0.jpg",
+    "static/media/Frisco-58.jpg": "/CSPhotography/static/media/Frisco-58.766a86a2601b3fcfe938.jpg",
     "static/media/i-WNkLZFq-4K.jpg": "/CSPhotography/static/media/i-WNkLZFq-4K.ef4957b36c15c068461a.jpg",
     "static/media/i-hmPbjtG-4K.jpg": "/CSPhotography/static/media/i-hmPbjtG-4K.11b70f0df29626f0e400.jpg",
     "static/media/Westover Hills -1.jpg": "/CSPhotography/static/media/Westover Hills -1.d1608efb94d438889fe8.jpg",
@@ -15,7 +21,6 @@
     "static/media/WF Glendale final - jpg-1.jpg": "/CSPhotography/static/media/WF Glendale final - jpg-1.e4f06dcdf0613b48c5cb.jpg",
     "static/media/10911 Dry Stack-31.jpg": "/CSPhotography/static/media/10911 Dry Stack-31.9df980130bad8887049c.jpg",
     "static/media/Paris Paul Cezanne-22.jpg": "/CSPhotography/static/media/Paris Paul Cezanne-22.7cf37ebf658c4c2d0a25.jpg",
-    "static/media/Wells Fargo Fitness Center -11-X3.jpg": "/CSPhotography/static/media/Wells Fargo Fitness Center -11-X3.15e52d91e2b0dd52e6b8.jpg",
     "static/media/FP 4 large conf jpg-X3-2.jpg": "/CSPhotography/static/media/FP 4 large conf jpg-X3-2.78a70161c64e5797e559.jpg",
     "static/media/Wells Fargo Fitness Center -7-X3.jpg": "/CSPhotography/static/media/Wells Fargo Fitness Center -7-X3.17b1dbb242cb5dc12a94.jpg",
     "static/media/Congress-4-X3.jpg": "/CSPhotography/static/media/Congress-4-X3.a6a830ca5975a9c72408.jpg",
@@ -23,14 +28,14 @@
     "static/media/i-PVzgVvr-X3.jpg": "/CSPhotography/static/media/i-PVzgVvr-X3.faa3dce9ea25023a863e.jpg",
     "static/media/Preston-1-X2.jpg": "/CSPhotography/static/media/Preston-1-X2.60be30fd27e42d36e8ad.jpg",
     "static/media/Congress-13-X3.jpg": "/CSPhotography/static/media/Congress-13-X3.e5724cd2b127bc6e1570.jpg",
-    "static/media/me.jpg": "/CSPhotography/static/media/me.53d3a9469a97ba5d481e.jpg",
+    "static/media/GlacialIndifference-Regular.otf": "/CSPhotography/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
     "static/media/logo.png": "/CSPhotography/static/media/logo.1eafb75505f34f86cc6d.png",
     "index.html": "/CSPhotography/index.html",
-    "main.7fe5dcce.css.map": "/CSPhotography/static/css/main.7fe5dcce.css.map",
-    "main.8d6cf8b7.js.map": "/CSPhotography/static/js/main.8d6cf8b7.js.map"
+    "main.e892c804.css.map": "/CSPhotography/static/css/main.e892c804.css.map",
+    "main.4900a35e.js.map": "/CSPhotography/static/js/main.4900a35e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fe5dcce.css",
-    "static/js/main.8d6cf8b7.js"
+    "static/css/main.e892c804.css",
+    "static/js/main.4900a35e.js"
   ]
 }
