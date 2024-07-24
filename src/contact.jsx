@@ -28,7 +28,7 @@ const ContactForm = () => {
     };
 
     try {
-      const response = await axios.post('https://kez9uy6df0.execute-api.us-east-2.amazonaws.com/default/EmailCaptchaGOT', dataToSend);
+      const response = await axios.post('https://jqarrg981h.execute-api.us-east-2.amazonaws.com/default/CSaddler', dataToSend);
       console.log('Email sent successfully!', response.data);
       alert('Message sent successfully!');
       setFormData({
@@ -88,7 +88,7 @@ const ContactForm = () => {
             className="p-2 border-2 rounded-md border-black"
           />
           <ReCAPTCHA
-            sitekey="6LfktoYpAAAAAF3Nl1WaITq97YA74mG0t4KzljQq"
+            sitekey="6LdyvRcqAAAAAOvkB0GYslJyDuTKut_1ZWU9Pect"
             onChange={token => setRecaptchaToken(token)}
             onExpired={() => setRecaptchaToken('')}
             className="flex justify-center my-4"
