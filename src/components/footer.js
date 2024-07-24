@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Ensure you're using react-router for SPA navigation
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <footer className="bg-gray-300 text-black py-4 md:py-6 px-4 md:px-0" style={{ fontFamily: 'Glacial Indifference, sans-serif' }}>
-            <div className="flex flex-col md:flex-row items-center justify-between px-4"> {/* Added padding here */}
+            <div className="flex flex-col md:flex-row items-center justify-between px-4">
                 {/* Logo Section (Smaller on Mobile) */}
                 <div className="flex items-center">
                     <img src="./assets/logo.png" alt="Crystal Saddler Photography" style={{ maxWidth: '80px', height: 'auto' }} className="md:max-w-none md:mr-8" />
@@ -19,9 +19,12 @@ function Footer() {
                     </ul>
                 </nav>
 
-                {/* Email Section (Right Aligned) */}
+                {/* Email and LinkedIn Section (Right Aligned) */}
                 <div className="text-center md:text-right">
-                    <p className="text-sm md:text-base">crystalsaddlerphotography@yahoo.com</p>
+                    <p className="text-sm md:text-base mb-2">crystalsaddlerphotography@yahoo.com</p>
+                    <a href="https://www.linkedin.com/in/crystal-saddler-38225360/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin-logo.png" alt="LinkedIn Profile" style={{ maxWidth: '24px', height: 'auto' }} className="inline-block" />
+                    </a>
                 </div>
             </div>
         </footer>

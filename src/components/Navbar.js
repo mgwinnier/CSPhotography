@@ -22,14 +22,14 @@ function Navbar() {
     return (
         <nav className="bg-white px-6 sm:px-8 py-4 shadow-md font-glacial">
             <div className="container mx-auto flex flex-wrap items-center justify-between relative">
-                <div className="flex flex-1 justify-center mt-2">
+                <div className="flex items-center justify-center w-full md:w-auto md:justify-start">
                     <Link to="/" className="flex items-center">
                         <img src={logo} className="h-24 md:h-32" alt="Logo" /> {/* Adjusted logo size */}
                     </Link>
                 </div>
                 <button
                     type="button"
-                    className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden"
+                    className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden absolute right-6 top-4"
                     aria-controls="navbar-default"
                     aria-expanded={isOpen ? "true" : "false"}
                     onClick={() => setIsOpen(!isOpen)}
