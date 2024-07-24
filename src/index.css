@@ -1,6 +1,21 @@
+/* src/styles/globals.css */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('./fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Glacial Indifference', sans-serif;
+}
+
 
 /* index.css */
 .react-photo-gallery--gallery {

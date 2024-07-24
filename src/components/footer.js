@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Ensure you're using react-router for
 
 function Footer() {
     return (
-        <footer className="bg-gray-300 text-black py-4 md:py-6 px-4 md:px-0">
+        <footer className="bg-gray-300 text-black py-4 md:py-6 px-4 md:px-0" style={{ fontFamily: 'Glacial Indifference, sans-serif' }}>
             <div className="flex flex-col md:flex-row items-center justify-between px-4"> {/* Added padding here */}
                 {/* Logo Section (Smaller on Mobile) */}
                 <div className="flex items-center">
@@ -13,9 +13,9 @@ function Footer() {
                 {/* Navigation Links (Centered) */}
                 <nav className="text-center md:text-left mb-4 md:mb-0 flex-grow">
                     <ul className="flex flex-col md:flex-row justify-center md:justify-start gap-4">
-                        <li><Link to="/" className="text-black text-sm md:text-base hover:text-gray-300">Home</Link></li>
-                        <li><Link to="/about" className="text-black text-sm md:text-base hover:text-gray-300">About</Link></li>
-                        <li><Link to="/contact" className="text-black text-sm md:text-base hover:text-gray-300">Contact Us</Link></li>
+                        <li><Link to="/" className="text-black text-sm md:text-base hover:text-gray-300">HOME</Link></li>
+                        <li><Link to="/about" className="text-black text-sm md:text-base hover:text-gray-300">ABOUT</Link></li>
+                        <li><Link to="/contact" className="text-black text-sm md:text-base hover:text-gray-300">CONTACT</Link></li>
                     </ul>
                 </nav>
 

@@ -9,7 +9,7 @@ def get_image_dimensions(directory):
     # Walk through the directory
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.lower().endswith('.jpg'):
+            if file.lower().endswith(('.jpg', '.png', '.tif')):
                 # Construct the full path to the file
                 file_path = os.path.join(root, file)
                 # Open the image file

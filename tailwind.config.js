@@ -32,7 +32,7 @@ module.exports = {
       fontFamily: {
         // Custom font families
         body: ['"Segoe UI"', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
-        // Add other custom fonts as needed
+        glacial: ['"Glacial Indifference"', ...defaultTheme.fontFamily.sans], // Add Glacial Indifference
       },
       screens: {
         // Custom breakpoints

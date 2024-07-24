@@ -45,12 +45,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-start pt-10 min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-start pt-6 min-h-screen bg-white" style={{ fontFamily: '"Glacial Indifference", sans-serif' }}>
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
-        <p>Contact us to ensure the silver linings of your golden years. We are excited to talk further about all of our services and resources.</p>
+        <h1 className="text-4xl font-bold mb-2" style={{ letterSpacing: '0.15em', color: '#3b2d2d' }}>CONTACT US</h1>
       </div>
-      <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-md mx-4 border-2 border-yellow-500">
+      <div className="bg-white p-4 md:p-8 rounded-lg shadow-md w-full max-w-md mx-4 border-2 border-black">
         <form id="contact-form" onSubmit={handleSubmit} className="flex flex-col space-y-4">
           <input
             type="text"
@@ -59,7 +58,7 @@ const ContactForm = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="p-2 border-2 rounded-md border-yellow-500"
+            className="p-2 border-2 rounded-md border-black"
           />
           <input
             type="email"
@@ -68,7 +67,7 @@ const ContactForm = () => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="p-2 border-2 rounded-md border-yellow-500"
+            className="p-2 border-2 rounded-md border-black"
           />
           <input
             type="text"
@@ -77,7 +76,7 @@ const ContactForm = () => {
             required
             value={formData.subject}
             onChange={handleChange}
-            className="p-2 border-2 rounded-md border-yellow-500"
+            className="p-2 border-2 rounded-md border-black"
           />
           <textarea
             id="message"
@@ -86,7 +85,7 @@ const ContactForm = () => {
             required
             value={formData.message}
             onChange={handleChange}
-            className="p-2 border-2 rounded-md border-yellow-500"
+            className="p-2 border-2 rounded-md border-black"
           />
           <ReCAPTCHA
             sitekey="6LfktoYpAAAAAF3Nl1WaITq97YA74mG0t4KzljQq"
@@ -94,7 +93,7 @@ const ContactForm = () => {
             onExpired={() => setRecaptchaToken('')}
             className="flex justify-center my-4"
           />
-          <button type="submit" className="bg-yellow-500 text-white p-2 rounded-md hover:bg-yellow-600 transition duration-200">Send Message</button>
+          <button type="submit" className="bg-black text-white p-2 rounded-md hover:bg-grey-400 transition duration-200">Send Message</button>
         </form>
       </div>
     </div>

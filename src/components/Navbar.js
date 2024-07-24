@@ -20,12 +20,13 @@ function Navbar() {
     );
 
     return (
-        <nav className="bg-white px-6 sm:px-8 py-4 shadow-md">
-            <div className="container mx-auto flex flex-wrap items-center justify-between">
-                <Link to="/" className="flex items-center">
-                    <img src={logo} className="h-12 mr-4" alt="Logo" />
-                    <span className="text-2xl font-semibold text-gray-800" style={{ fontFamily: 'Poppins, sans-serif' }}>Crystal Saddler Photography</span>
-                </Link>
+        <nav className="bg-white px-6 sm:px-8 py-4 shadow-md font-glacial">
+            <div className="container mx-auto flex flex-wrap items-center justify-between relative">
+                <div className="flex flex-1 justify-center mt-2">
+                    <Link to="/" className="flex items-center">
+                        <img src={logo} className="h-24 md:h-32" alt="Logo" /> {/* Adjusted logo size */}
+                    </Link>
+                </div>
                 <button
                     type="button"
                     className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden"
@@ -35,16 +36,16 @@ function Navbar() {
                 >
                     {isOpen ? CloseIcon : HamburgerIcon}
                 </button>
-                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-center md:flex md:space-x-6 w-full md:w-auto`} id="navbar-default">
-                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-start md:flex md:space-x-6 w-full md:w-auto md:absolute md:right-0`} id="navbar-default">
+                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
                         <li>
-                            <Link to="/" className="block py-2 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>Home</Link>
+                            <Link to="/" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>HOME</Link>
                         </li>
                         <li>
-                            <Link to="/about" className="block py-2 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>About</Link>
+                            <Link to="/about" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>ABOUT</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="block py-2 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>Contact Us</Link>
+                            <Link to="/contact" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>CONTACT</Link>
                         </li>
                     </ul>
                 </div>

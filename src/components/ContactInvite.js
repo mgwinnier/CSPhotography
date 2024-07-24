@@ -5,15 +5,16 @@ function ContactUsSection() {
     return (
         <div style={{
             background: 'white',
-            padding: '50px 20px',
+            padding: '20px 20px', // Reduced top and bottom padding
             textAlign: 'center',
-            fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif'
+            fontFamily: '"Glacial Indifference", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif' // Use Glacial Indifference font
         }}>
             <h1 style={{
                 fontSize: '28px',
-                color: '#333',
-                fontWeight: 'bold'
-            }}>Contact Us</h1>
+                color: '#3b2d2d',
+                fontWeight: 'bold',
+                letterSpacing: '0.15em' // Added letter spacing
+            }}>CONTACT</h1>
             <p style={{
                 fontSize: '18px',
                 color: '#444',
@@ -35,7 +36,7 @@ function ContactUsSection() {
                 border: '2px solid black',
                 boxShadow: '0 0 0 2px white'
             }}>
-                Schedule an Consultation
+                CONTACT
             </Link>
         </div>
     );
