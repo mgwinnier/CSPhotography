@@ -21,34 +21,41 @@ function Navbar() {
 
     return (
         <nav className="bg-white px-6 sm:px-8 py-4 shadow-md font-glacial">
-            <div className="container mx-auto flex flex-wrap items-center justify-between relative">
-                <div className="flex items-center justify-center w-full md:w-auto md:justify-start">
+            <div className="container mx-auto grid grid-cols-3 items-center relative md:flex md:justify-between">
+                <div className="flex items-center justify-start md:w-1/3">
+                    <button
+                        type="button"
+                        className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden"
+                        aria-controls="navbar-default"
+                        aria-expanded={isOpen ? "true" : "false"}
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        {isOpen ? CloseIcon : HamburgerIcon}
+                    </button>
+                </div>
+                <div className="flex items-center justify-center col-start-2 md:col-start-auto md:flex-1">
                     <Link to="/" className="flex items-center">
-                        <img src={logo} className="h-24 md:h-32" alt="Logo" /> {/* Adjusted logo size */}
+                        <img src={logo} className="h-24 md:h-32" alt="Logo" />
                     </Link>
                 </div>
-                <button
-                    type="button"
-                    className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden absolute right-6 top-4"
-                    aria-controls="navbar-default"
-                    aria-expanded={isOpen ? "true" : "false"}
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? CloseIcon : HamburgerIcon}
-                </button>
-                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-start md:flex md:space-x-6 w-full md:w-auto md:absolute md:right-0`} id="navbar-default">
-                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
-                        <li>
-                            <Link to="/" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>HOME</Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>ABOUT</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>CONTACT</Link>
-                        </li>
-                    </ul>
+                <div className="hidden md:flex items-center justify-end space-x-8 md:w-1/3">
+                    <Link to="/" className="text-gray-800">HOME</Link>
+                    <Link to="/about" className="text-gray-800">ABOUT</Link>
+                    <Link to="/contact" className="text-gray-800">CONTACT</Link>
                 </div>
+            </div>
+            <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:hidden w-full mt-4 text-base font-medium`} id="navbar-default">
+                <ul className="flex flex-col space-y-4">
+                    <li>
+                        <Link to="/" className="text-gray-800" onClick={() => setIsOpen(false)}>HOME</Link>
+                    </li>
+                    <li>
+                        <Link to="/about" className="text-gray-800" onClick={() => setIsOpen(false)}>ABOUT</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact" className="text-gray-800" onClick={() => setIsOpen(false)}>CONTACT</Link>
+                    </li>
+                </ul>
             </div>
         </nav>
     );
