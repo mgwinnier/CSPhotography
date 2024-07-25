@@ -105,7 +105,7 @@ function PhotoGallery() {
                     onMovePrevRequest={movePrev}
                     onMoveNextRequest={moveNext}
                     toolbarButtons={[
-                        <button onClick={closeLightbox} className="custom-close-button">
+                        <button onClick={closeLightbox} className="custom-close-button" style={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1500 }}>
                             <CloseIcon />
                         </button>,
                     ]}
@@ -120,6 +120,9 @@ function PhotoGallery() {
                             padding: '0',
                             border: 'none', // Remove border
                             borderRadius: '0', // Remove border radius
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center'
                         },
                     }}
                     customControls={[
