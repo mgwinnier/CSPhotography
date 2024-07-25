@@ -31,6 +31,10 @@ import img23 from '../assets/Frisco-45.jpg';
 import img24 from '../assets/Frisco-58.jpg';
 import img25 from '../assets/WF Sendero Marketplace Exterior -7.jpg';
 
+import CloseIcon from './CloseIcon';
+import PrevIcon from './PrevIcon';
+import NextIcon from './NextIcon';
+
 const allPhotos = [
     { src: img1, width: 6172, height: 4115 },
     { src: img2, width: 6192, height: 4128 },
@@ -100,6 +104,32 @@ function PhotoGallery() {
                     onCloseRequest={closeLightbox}
                     onMovePrevRequest={movePrev}
                     onMoveNextRequest={moveNext}
+                    toolbarButtons={[
+                        <button onClick={closeLightbox} className="custom-close-button">
+                            <CloseIcon />
+                        </button>,
+                    ]}
+                    reactModalStyle={{
+                        overlay: {
+                            zIndex: 1000,
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)', // Slightly darken the overlay for contrast
+                        },
+                        content: {
+                            zIndex: 1100,
+                            background: 'rgba(0, 0, 0, 0)', // Make content transparent to avoid any background color
+                            padding: '0',
+                            border: 'none', // Remove border
+                            borderRadius: '0', // Remove border radius
+                        },
+                    }}
+                    customControls={[
+                        <button onClick={movePrev} className="custom-nav-button custom-nav-button-prev">
+                            <PrevIcon />
+                        </button>,
+                        <button onClick={moveNext} className="custom-nav-button custom-nav-button-next">
+                            <NextIcon />
+                        </button>
+                    ]}
                 />
             )}
         </div>

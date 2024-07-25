@@ -1,6 +1,5 @@
 /* src/styles/globals.css */
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,23 +15,41 @@ body {
   font-family: 'Glacial Indifference', sans-serif;
 }
 
-
 /* index.css */
 .react-photo-gallery--gallery {
   z-index: 0; /* Ensure the gallery is behind the lightbox */
 }
 
-.ril__navButtons, .ril__closeButton {
-  z-index: 1100 !important;
-  opacity: 1 !important;
-  color: white !important;
-  background-color: rgba(0, 0, 0, 0.7) !important; /* Ensure this is visible against your background */
-}
-
-.ril__navButtonPrev, .ril__navButtonNext {
-  border: none !important;
-}
-
-.ril__closeButton {
+.custom-close-button {
   background-color: rgba(255, 0, 0, 0.8) !important; /* Make close button more visible */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1100;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-nav-button {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1100; /* Ensure the buttons are above the content */
+  color: white !important; /* Ensure the icon color is visible */
+}
+
+.custom-nav-button-prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-nav-button-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
