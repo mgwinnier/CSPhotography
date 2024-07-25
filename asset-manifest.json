@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6dd2916.css",
-    "main.js": "/static/js/main.cb617f91.js",
+    "main.css": "/static/css/main.4c3bedb1.css",
+    "main.js": "/static/js/main.f6b29514.js",
     "static/media/St Paul-53.jpg": "/static/media/St Paul-53.fc79a03ebcb4347f4595.jpg",
     "static/media/927 Belle Oaks-10.jpg": "/static/media/927 Belle Oaks-10.084d5a123d97081fde6a.jpg",
     "static/media/me.jpg": "/static/media/me.f0028c615105c7d25c1d.jpg",
@@ -31,11 +31,11 @@
     "static/media/GlacialIndifference-Regular.otf": "/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
     "static/media/logo.png": "/static/media/logo.1eafb75505f34f86cc6d.png",
     "index.html": "/index.html",
-    "main.c6dd2916.css.map": "/static/css/main.c6dd2916.css.map",
-    "main.cb617f91.js.map": "/static/js/main.cb617f91.js.map"
+    "main.4c3bedb1.css.map": "/static/css/main.4c3bedb1.css.map",
+    "main.f6b29514.js.map": "/static/js/main.f6b29514.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6dd2916.css",
-    "static/js/main.cb617f91.js"
+    "static/css/main.4c3bedb1.css",
+    "static/js/main.f6b29514.js"
   ]
 }
