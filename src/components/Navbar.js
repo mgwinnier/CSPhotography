@@ -21,25 +21,23 @@ function Navbar() {
 
     return (
         <nav className="bg-white px-6 sm:px-8 py-4 shadow-md font-glacial">
-            <div className="container mx-auto flex items-center justify-between relative">
-                <div className="flex flex-1 justify-start md:justify-center">
-                    <Link to="/" className="flex items-center justify-center">
-                        <img src={logo} className="h-24 md:h-32" alt="Logo" />
+            <div className="container mx-auto flex flex-wrap items-center justify-between relative">
+                <div className="flex items-center justify-center w-full md:w-auto md:justify-start">
+                    <Link to="/" className="flex items-center">
+                        <img src={logo} className="h-24 md:h-32" alt="Logo" /> {/* Adjusted logo size */}
                     </Link>
                 </div>
-                <div className="flex items-center justify-end flex-1 md:hidden">
-                    <button
-                        type="button"
-                        className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
-                        aria-controls="navbar-default"
-                        aria-expanded={isOpen ? "true" : "false"}
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        {isOpen ? CloseIcon : HamburgerIcon}
-                    </button>
-                </div>
-                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex md:flex-row md:items-center md:space-x-8 w-full md:w-auto md:flex-1 md:justify-end`} id="navbar-default">
-                    <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-base font-medium">
+                <button
+                    type="button"
+                    className="inline-flex items-center p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 md:hidden absolute right-6 top-4"
+                    aria-controls="navbar-default"
+                    aria-expanded={isOpen ? "true" : "false"}
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    {isOpen ? CloseIcon : HamburgerIcon}
+                </button>
+                <div className={`${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row md:items-start md:flex md:space-x-6 w-full md:w-auto md:absolute md:right-0`} id="navbar-default">
+                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
                         <li>
                             <Link to="/" className="block py-1 pr-4 pl-3 text-gray-800 rounded md:bg-transparent md:p-0" onClick={() => setIsOpen(false)}>HOME</Link>
                         </li>
