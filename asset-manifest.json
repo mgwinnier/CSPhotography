@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.20984caa.css",
-    "main.js": "/static/js/main.07d473cc.js",
+    "main.js": "/static/js/main.9ff08e52.js",
     "static/media/St Paul-53.jpg": "/static/media/St Paul-53.fc79a03ebcb4347f4595.jpg",
     "static/media/927 Belle Oaks-10.jpg": "/static/media/927 Belle Oaks-10.084d5a123d97081fde6a.jpg",
     "static/media/me.jpg": "/static/media/me.f0028c615105c7d25c1d.jpg",
@@ -32,10 +32,10 @@
     "static/media/logo.png": "/static/media/logo.1eafb75505f34f86cc6d.png",
     "index.html": "/index.html",
     "main.20984caa.css.map": "/static/css/main.20984caa.css.map",
-    "main.07d473cc.js.map": "/static/js/main.07d473cc.js.map"
+    "main.9ff08e52.js.map": "/static/js/main.9ff08e52.js.map"
   },
   "entrypoints": [
     "static/css/main.20984caa.css",
-    "static/js/main.07d473cc.js"
+    "static/js/main.9ff08e52.js"
   ]
 }
